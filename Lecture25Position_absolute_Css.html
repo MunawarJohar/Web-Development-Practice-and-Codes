@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Position in Css</title>
+    <style>
+.container{
+
+    border: 3px solid rgb(78, 58, 27);
+    height: 2000px;
+    background-color: lawngreen;
+}
+        /*Css  Position static(defualt) absolute relative fixe and sticky */
+    .box{
+        display: inline-block;
+        border: 2px solid red;
+        width: 200px;
+        height: 150px;
+        margin: 4px;
+    }
+    #box3{
+        /* related to it normal position */
+        /* position: absolute;
+        top: 34px; */
+/* 
+        position: absolute;
+        top: 34px;
+        right: 134px; */
+
+/* 
+position fixed with related window
+        position: fixed;
+        right: 3px;
+        bottom: 5px; */
+
+        /* sticky
+         */
+         position: sticky;
+         top: 4px;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Communicate With us</div>
+        <div class="box" id="box4">4</div>
+        
+
+
+</div>
+
+</body>
+
+</html>

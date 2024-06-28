@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <!-- DOM document object model -->
+<div id="main" class="container">
+<ul>
+    <li>HOME</li>
+    <li>SERVICES</li>
+    <li>ABOUT</li>
+    <li>Contact Us</li>
+    <li>More About us</li>
+</ul>
+
+</div>
+
+<div class="container">
+Another container
+</div>
+    <script>
+let main=document.getElementById('main');
+console.log(main);
+
+let nav=document.getElementById('nav');
+console.log('nav');
+
+let container=document.getElementsByClassName('container');
+console.log('container');
+
+let sel=document.querySelectorall('#nav>li');
+console.log("selector return ",sel)
+    </script>
+</body>
+</html>

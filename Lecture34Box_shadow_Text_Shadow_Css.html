@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box shadow And Text Shadow</title>
+ <style>
+ .container{
+     display: flex;
+ }
+ .card{
+     padding: 23px 23px;
+/* 
+     border: 2px solid tomato; */
+
+     margin: 23px 12px;
+     background-color: yellow;
+/* 
+     box-shadow: 14px 12px green; For positive */
+
+      /* bottom right color */
+     box-shadow: -14px -12px green;
+ /* bottom right blur proper color 
+     box-shadow: 12px 12px 20px blueviolet;
+*/
+     box-shadow: 12px 5px 5px red;
+ }
+ .card h1{
+     /* This is for text shadow in css  */
+     text-shadow:2px 2px green;
+     text-shadow: 3px 3px 4px blue;
+ }
+ #card-1 p{
+     text-shadow: 3px 3px 3px white;
+ }
+ </style>
+ 
+    </head>
+    <body>
+<div class="container">
+    <div class="card" id="card-1">
+        <h1> This is Python Programming Coure</h1>
+        <p>  This is best computer accedmy we offer best Courses  </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod laboriosam quis a amet consequuntur asperiores rem quibusdam minima quidem repellendus, pariatur atque dolores, ea laudantium quia, corrupti illo deserunt dolorum.</p>
+      </div>
+    <div class="card" id="card-2">
+            <h1> This is C/C++ Programming Coure</h1>
+        <p>   This is best computer accedmy we offer best Courses </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, amet omnis harum quos atque corporis tempora ad dolorem beatae nostrum sunt facilis minus, quaerat dolore repellat itaque molestias quo! Possimus!</p>
+    </div>
+    <div class="card" id="card-3">
+            <h1> This is Java Programming Coure</h1>
+            <p>  This is best computer accedmy we offer best Courses  </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ratione necessitatibus tempore natus ipsa quibusdam nobis qui placeat dolores, quaerat dolorum cupiditate expedita illo! Inventore ab asperiores tempore dignissimos quos.</p>
+    </div>
+    <div class="card" id="card-4">
+            <h1> This is CSS HTML Programming Coure</h1>
+            <p>  This is best computer accedmy we offer best Courses  </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi itaque ducimus perferendis vel magni velit! Ipsam enim, praesentium alias sit dolorem fugiat natus tenetur nihil illum consequatur explicabo nobis tempora!</p>
+    </div>
+</div>
+
+    </body>
+</html>

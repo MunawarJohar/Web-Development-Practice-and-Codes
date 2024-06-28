@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating a layout using Css Grid</title>
+    <style>
+    .container{
+display: grid;
+grid-gap: 1rem;
+grid-template-areas:
+'navbar navbar navbar navbar'
+'section section section Side'
+'footer footer footer footer';
+    }
+    .box{
+        background-color: aqua;
+        border: 3px solid black;
+        padding: 14px 25px;
+        border-radius: 14px;
+
+    }
+    #navbar{
+grid-area: navbar;
+box-shadow: 8px 8px;
+text-shadow: 12px 12px 6px;
+font: bold;
+            transition:all 1s ease-in-out;
+    }
+    #section{
+        grid-area: section;
+
+    }
+    #Side{
+grid-area: Side;
+    }
+    footer{
+        grid-area: footer;
+    }
+    #navbar:hover{
+        transform:translateX(360deg);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="navbar" class="box"> HOME CONTACT SERVICES </div>
+
+        <div id="section" class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores sunt quod aut, praesentium enim asperiores unde laboriosam quisquam obcaecati consequuntur, recusandae accusantium pariatur adipisci ex eum odio assumenda corporis?  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde cumque neque excepturi, in omnis voluptatem maxime perferendis quo quibusdam dolorem ea ut ratione?</div>
+        <div id="Side" class="box">Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum vitae veritatis quas debitis aliquam, recusandae, fuga laborum perspiciatis nihil ratione? Nihil at vel saepe veniam. Veniam at eum alias ipsum eius accusantium illo quibusdam et quo obcaecati, sequi officiis ut quaerat, dicta modi nihil corrupti eligendi aliquid assumenda ex recusandae temporibus! Praesentium mollitia cumque alias obcaecati dignissimos suscipit est exercitationem tempora odit. Qui accusamus asperiores earum, cumque eius non at, modi error sint molestias tempora impedit, ipsam consectetur! Voluptatibus doloribus sunt aliquid tempora. Voluptate fugit ad explicabo! Id perferendis velit vero repellendus animi maiores nostrum odit nisi, molestiae quis qui doloribus aspernatur labore asperiores amet corporis est itaque necessitatibus similique quia. Sunt quisquam fugit eaque ullam qui cumque sit rem magnam, ducimus, possimus ab ex consectetur asperiores veritatis eos, officia dolore quo voluptas cum recusandae quis sed. Quia, vel magni! Deleniti beatae dignissimos similique quasi cumque cupiditate eligendi blanditiis explicabo iste, neque aperiam odit molestias in? Ad sunt, perspiciatis, odit, dolore eaque voluptatem itaque accusantium officiis esse ducimus doloremque in repudiandae corrupti veritatis ipsa nisi maiores aspernatur quia assumenda? Hic, sint quisquam voluptatibus corporis iste ab similique ipsum doloremque ullam, optio quae architecto maxime animi beatae necessitatibus ea error id. Temporibus architecto mollitia vitae harum fuga qui officiis molestias similique nesciunt hic nobis ipsam dicta consequuntur veniam unde blanditiis dolores porro accusantium eos repellat, repellendus nulla eaque! Similique earum exercitationem incidunt quae dicta laboriosam iste quod beatae vel odio quis, dolor dolorum at dolores saepe quam. Voluptatum consectetur, optio molestiae nemo nobis quibusdam? Accusamus similique, fugiat illo provident nobis dolores, fuga quaerat dolorem asperiores beatae, esse atque dolor voluptatibus consequuntur quibusdam ipsam adipisci molestiae. Ea, consequatur eos. Eum dolores iste soluta dolor? Nisi quas laboriosam, laborum obcaecati perferendis facere voluptates officiis corporis culpa illum aut saepe magni ullam. Ad. ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit obcaecati vitae aut.</div>
+
+        <!-- <div class="box">Boxes-1</div>
+        <div class="box">Boxes-2</div>
+        <div class="box">Boxes-3</div>
+        <div class="box">Boxes-4</div>
+        <div class="box">Boxes-5</div>
+        <div class="box">Boxes-6</div>
+        <div class="box">Boxes-7</div>
+        <div class="box">Boxes-8</div>
+        <div class="box">Boxes-9</div>
+        <div class="box">Boxes-10</div>
+        <div class="box">Boxes-11</div>
+        <div class="box">Boxes-12</div>
+        <div class="box">Boxes-13</div>
+        <div class="box">Boxes-14</div> -->
+
+    </div>
+  <footer class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat amet saepe culpa.</footer>
+</body>
+
+</html>

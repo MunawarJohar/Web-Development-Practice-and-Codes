@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KeyFrames and animations in CSS</title>
+        <style>
+        .container{
+            display: flex;
+            background-color: goldenrod;
+        }
+        .box{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            align-content: center;
+            text-align: center;
+            position: relative;
+            animation-name: munawar;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+            animation-delay: 1s;
+/*             
+            animation-direction: reverse; */
+
+
+        }
+        @keyframes munawar{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 600px;
+            }
+        }
+        .concept{
+            display: flex;
+            background-color:palevioletred;
+            height: 100px;
+        }
+        .program{
+            background-color:turquoise;
+            width: 100px;
+            height: 100px;
+            align-content: center;
+            text-align: center;
+            position: relative;
+            animation-name: munawar1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+            animation-delay: 2s;
+
+            /*animation:animation_name animation_duration_animation_timming_function_animation_delay
+             _animation_iteration_connt animation_fill_mode 
+/*             
+This proper is set in one using this short hand 
+Aanimation:munawar1 2s ease_in 1s 12backword
+             */
+
+
+        }
+        @keyframes munawar1{
+            0%{
+                top:0px;
+                left: 0px;
+            }
+            33%{
+top:250px;
+left:0px;
+            }
+            70%{
+top:250px;
+left:250px;
+            }
+            100%{
+top:0;
+left: 250px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                Computer Concepts 
+            </div>
+
+        </div>
+        <div class="concept">
+            <div class="program">
+                This is programming
+            </div>
+            </div>
+    </body>
+</html>

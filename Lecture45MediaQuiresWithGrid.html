@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Queries With Css Grid</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: repeat(4,1fr);
+        }
+    @media only screen and (max-width:300px){
+body{
+    background-color: red;
+}
+    }
+    
+    @media only screen and (min-width:300px)and (max-width:500px){
+body{
+    background-color:green;
+}
+    }
+
+    @media (min-width:500px)and(max-width:800px){
+        body{
+            background-color:blue;
+        }
+    }
+
+
+    @media (min-width:500px)and (max-width:800px){
+        body{
+            background-color:yellow;
+        }
+    }
+
+    @media (min-width:800px){
+        body{
+            background-color:purple;
+        }
+    }
+
+.border_nav{
+    border: 2px solid black;
+    padding: 10px 23px;
+    background-color: wheat;
+    grid-template-areas:
+'navbar navbar navbar navbar'
+'section section aside aside'
+'footer footer footer footer';
+}
+section{
+        grid-area: section;
+
+    }
+    /* aside{
+grid-area: aside;
+    } */
+    footer{
+        grid-area: footer;
+    }
+    navbar:hover{
+        transform:scaleY(2);
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+<nav class="border_nav">
+    Home  Contact US    About US 
+</nav>
+<section class="border_nav">
+    <h2>  Learn More CSS and Html </h2>
+</section>
+<aside class="border_nav">
+   <h2>  More about us </h2>
+</aside>
+
+    </div>
+    <footer class="border_nav">
+            Copy right computer concepts 2022
+        </footer>
+</body>
+
+</html>

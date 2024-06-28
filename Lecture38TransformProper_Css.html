@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transform in CSS</title>
+    <style>
+        .conatiner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blueviolet;
+        }
+        
+        .box {
+            background-color: aqua;
+            border: 3px solid green;
+            border-radius: 15px;
+            height: 200px;
+            width: 200px;
+            margin: 12px 12px;
+            padding: 12px 12px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease-in-out;
+        }
+        
+        .box:hover {
+            /* transform: skew(40deg); */
+            transform: scale(2);
+            /* Transilate x int x axis */
+            transform: translateX(130px);
+            /* trasnsilate in to y axis */
+            transform: translateY(120px);
+        }
+        
+        .box2 {
+            background-color: brown;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 35px;
+            height: 200px;
+            width: 200px;
+            margin: 12px 12px;
+            padding: 12px 12px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font: bold;
+            transition: all 1s ease-in-out;
+        }
+        
+        .box2:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conatiner">
+        <div class="box">This is Box one</div>
+    </div>
+
+
+    <div class="conatiner">
+        <div class="box2">This is second Box</div>
+    </div>
+</body>
+
+</html>

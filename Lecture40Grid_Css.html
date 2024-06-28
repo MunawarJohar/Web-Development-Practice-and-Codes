@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Css Grid tutorials</title>
+        <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 250px auto 100px; */
+
+            grid-template-columns:repeat(5,auto);
+            grid-gap: 2rem;
+            margin: 5px 5px;
+
+        }
+        .thing{
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            background-color:green;
+            border: 3px solid tomato;
+            border-radius: 40px;
+        
+
+        }
+        </style>
+    </head>
+    <body>
+<div class="container">
+  <div class="thing">This is Items-1</div>
+  <div class="thing">This is Items-2</div>
+  <div class="thing">This is Items-3</div>
+  <div class="thing">This is Items-4</div>
+  <div class="thing">This is Items-5</div>
+  <div class="thing">This is Items-6</div>
+  <div class="thing">This is Items-7</div>
+  <div class="thing">This is Items-8</div>
+  <div class="thing">This is Items-9</div>
+</div>
+
+    </body>
+</html>

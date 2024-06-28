@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Json in java script
+    </title>
+</head>
+<body>
+<div class="clas">This is my class</div>
+    <script>
+
+let jsonObj={
+    name:"Munawar",
+    channel:"computer concepts",
+    friend:"Ali",
+
+}
+console.log(jsonObj);
+let myJsonStr=JSON.stringify(jsonObj);
+console.log(myJsonStr);
+
+myJsonStr=myJsonStr.replace('Ali','Ahamd');
+console.log(myJsonStr);
+
+    </script>
+</body>
+</html>

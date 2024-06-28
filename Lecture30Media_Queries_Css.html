@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Queries</title>
+<style>
+.box{
+    background-color: blue;
+    color: white;
+    font-size: 40px;
+    text-align:center;
+ display: none;
+}
+@media (max-width:300px){
+    #box-1{
+        display: block;
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width:500px)and (min-width:300px){
+    #box-2{
+        display: block;
+        background-color:red;
+    }
+}
+</style>
+</head>
+<body>
+<div class="box" id="box1">This is i phone</div>
+<div class="box" id="box2">This is tablet</div>
+<div class="box" id="box3">THis is computer</div>
+<div class="box" id="box4">this is huge secreen computer</div>
+
+</body>
+
+</html>

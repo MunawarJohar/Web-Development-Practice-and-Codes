@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Before And After Selector</title>
+    <style>
+        body{
+            background-color:black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        
+        header::before{
+            background: url('education.png')no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left:0;
+            opacity: 0.5;
+        }
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: 3px 230px;
+        align-items: center;
+
+        border-radius: 15px;
+        height: 344px;
+        justify-content: center;
+    }
+    .navigation{
+        
+        display: flex;
+        font-size: 20px;
+
+    }
+    li{
+        list-style: none;
+        padding:33px 25px;
+    }
+
+    /* section::before{
+        content:"This is s content we insert before selector"
+    }
+     */
+     h2{
+         font-size: 3rem;
+     }
+     p{
+         text-align: center;
+     }
+     .container{
+         position: absolute;
+         top: 5px;
+         right: 10px;
+         border: 2px solid blue;
+         width: 10%;
+         height:12%;
+         border-radius: 20px;   
+           }
+     
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+<ul class="navigation">
+<li  class="things"><a href="http/google.com"></a>Home</li>
+<li class="things">About</li>
+<li class="things">Contact Us</li>
+<li class="things">Watch More</li>
+
+<div class="container">
+<p> Computer Concepts</p>
+</div>
+</ul>
+        </nav>
+        
+    </header>
+
+    <section>
+            <h2> Well Come To Computer Concepts</h2>
+            <p>this is our youtube channel computer learn coding with us.</p>
+        </section>
+        <hr>
+
+</body>
+
+
+</html>

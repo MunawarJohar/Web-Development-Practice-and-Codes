@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops in java Script</title>
+    </head>
+    <body>
+<div class="clas">
+    This lecture about loops
+</div>
+
+        <script>
+console.log("This is Lecture 55");
+let i=0;
+for(i=0;i<3;i++)
+(
+    console.log(i)
+)
+
+let dos=["ali","ahmad","Kamal","jamal","Ummar"];
+// old javascript 
+//for (let index = 0; index < dos.length; index++) {
+//     console.log ("Hollo dosto"+ dos[index])
+//     )
+//}
+// dos.forEach(function f(element)
+// {
+//     console.log("Hello dos"+eleemt+"To modern java script");
+
+// });
+
+for(element of dos)
+{
+    console.log("Hello dos "+ element +"   To modern java script");
+}
+
+
+let employee={
+    name:"Munawar",
+    age:21,
+    channel:"Computer concepts",
+}
+for(key in employee)
+{
+    console.log("The ${key} of the ${employee[key]}");
+}
+
+        </script>
+    </body>
+</html>

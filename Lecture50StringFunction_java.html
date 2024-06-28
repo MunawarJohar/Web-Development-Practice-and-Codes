@@ -1,0 +1,32 @@
+<!doctype>
+<html>
+<head>
+    <title>Java Script string function</title>
+</head>
+<body>
+
+
+    <script>
+        var str="This is string";
+        console.log(str);
+        // first occurence of sub string
+        var position=str.indexOf('string');
+        console.log(position);
+
+       // sub string from a string start index from 0
+       var substr=str.slice(2,7);
+       console.log(substr);
+
+       var replaced=str.replace('string','Course');
+       console.log(str);
+       console.log(replaced);
+       console.log(str.toUpperCase());
+       //Change upper to lower
+       console.log(str.toLocaleLowerCase());
+
+       var char3=str.charAt(2);
+       console.log(char3);
+    </script>
+</body>
+
+</html>

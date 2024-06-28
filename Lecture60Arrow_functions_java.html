@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Arrow function in Javascript
+        </title>
+        </head>
+
+        <body>
+
+
+            <div class="class">
+
+                This is a arrow function 
+            </div>
+            <script>
+  let greet=()=>
+   {
+       console.log("good night");
+   };
+   greet();
+   setTimeout(() => {
+       console.log("We are inside settime out");
+   }, (3000));
+
+//    let a=10;
+//    let b=30;
+//    let sum=(a,b)=>a+b;
+//    console.log("The sum is",sum);
+   let obj={
+       names:["munawar","Ali","kamal","javad"],
+       speak()
+       {
+            this.names.forEach((student)=>{
+                console.log("well come   "+student);
+            });
+       }
+   }
+   obj.speak();
+            </script>
+        </body>
+</html>

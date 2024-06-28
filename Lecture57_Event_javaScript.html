@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events in javascript</title>
+    <style>
+        #btn{
+            padding: 14px,14px;
+            background-color: rgb(0, 255, 60);
+            border-radius: 8px solid rgb(128, 115, 0);
+            color: white;
+            font-weight: blod;
+            cursor: pointer;
+
+
+        }
+    
+    </style>
+</head>
+<body>
+
+<!-- Browser Events
+click
+contextmenu
+mouse up/ mouse down
+mouse over / mouse out 
+mouse move
+submit
+focus
+Dom content loaded
+transitioned -->
+
+<div class="container">
+
+    <h1>
+        This is our heading
+    </h1>
+    <p id="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, reiciendis! Ab id asperiores fugit officiis nihil error modi nam architecto at facilis, sint in quos eaque vero perferendis itaque ut alias earum laboriosam cupiditate perspiciatis?
+    </p>
+</div>
+<button   id="btn" onclick="toggleHide()">show/hide</button>
+
+
+<script>
+
+    let para=document.getElementById('para');
+    para.addEventListener('mouseover',function run()
+    {
+alert('mouse inside')
+    });
+    para.addEventListener('mouseout',function run()
+    {
+      alert('mouse outside')
+    });
+ function toggleHide()
+        {
+            let btn=document.getElementById('btn');
+let para=document.getElementById('para');
+if(para.style.display!='none')
+{
+    para.style.display='none';
+}
+else{
+
+    para.style.display='block';
+}
+        }
+
+
+</script>
+
+</body>
+</html>

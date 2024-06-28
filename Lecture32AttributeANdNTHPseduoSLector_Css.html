@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attribute and Psedo  Selectors </title>
+</head>
+<style>
+
+.container{
+  display: block;
+  width: 250px;
+  margin: auto;
+}
+input{
+    display: block;
+
+}
+input[type="text"]{
+    padding:25px;
+    border: 2px solid green;
+}
+a[target]{
+font-size: 35px;
+color: brown;
+}
+input[type='email']{
+    color: blueviolet;
+    border: 2px solid black;
+}
+/* This is only apply on the thing no 5 */
+
+li:nth-child(5){
+    color: red;
+}
+/* 
+li:nth-child(2n+0){
+    color: blue;
+}
+ */
+
+li:nth-child(2n+3){
+    color: blue;
+}
+
+li:nth-child(odd){
+    background-color: yellow;
+}
+
+
+li:nth-child(even){
+    background-color:green;
+}
+</style>
+<body>
+
+    <div class="container">
+
+        <h1> <a href="http://google.com" target="blank">Visit Google </a></h1>
+
+        
+        <h1> <a href="http://facebook.com" target="_self">Visit Facebook </a></h1>
+
+<form action="" class="form-Control">
+    <input type="text" placeholder="Enter You Name">
+
+    <input type="password" placeholder="Enter You password">
+
+    
+    <input type="email" placeholder="Enter You Email">
+    <input type="submit" value="submit">
+    
+</form>
+            <ul>
+                    <li class="things" id="things-1">Items1</li>
+                    <li class="things" id="things-2">Items2</li>
+                    <li class="things" id="things-3">Items3</li>
+                    <li class="things" id="things-4">Items4</li>
+                    <li class="things" id="things-5">Items5</li>
+                    <li class="things" id="things-6">Items6</li>
+
+                    <li class="things" id="things-7">Items7</li>
+                    <li class="things" id="things-8">Items8</li>
+                    <li class="things" id="things-9">Items9</li>
+                    <li class="things" id="things-10">Items10</li>
+                    <li class="things" id="things-11">Items11</li>
+                    <li class="things" id="things-12">Items12</li>
+                 </ul>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Set TimeOut ClearTime Out</title>
+</head>
+<body>
+
+  <!-- SetTimeOutAllow  us to run the function once after the interval of time -->
+<!-- SetTimeOutAllow  us to run the function repeatedly after the interval of time -->
+
+
+
+    <div class="class">
+This is a class
+<span id="time"> This is time now</span>
+    </div>
+
+    <script>
+        console.log("This is 58 tutorial");
+        function greet(name,textbye)
+        {
+            console.log("Hello "+name+"  ____"+textbye);
+        }
+        setTimeout(greet,600,"Munawar","salamat Rahay");
+
+
+        timeOut=setTimeout(greet,600,"take care");
+        console.log(timeOut);
+
+      clearTimeout(timeOut);
+
+      function night(name,textbye)
+      {
+        console.log("Hello "+name+"  ____"+textbye);
+      }
+      setInterval(night,100,"Munawar","good night")
+
+      function displayTime()
+      {time=new date();
+        console.log(time);
+        document.getElementById('time'),innerHTML=time;
+
+      }
+      setInterval(displayTime,10000);
+    </script>
+</body>
+
+</html>

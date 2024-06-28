@@ -1,0 +1,18 @@
+{
+  "name": "1.0.0",
+  "version": "1.0.0",
+  "description": "it is the best package for ever built someone ",
+  "main": "Lecture69_Npn",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "munawar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "slugify": "^1.6.5"
+  }
+}

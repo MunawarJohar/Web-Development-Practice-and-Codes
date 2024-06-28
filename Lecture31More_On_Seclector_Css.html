@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>More on Selectors</title>
+<style>
+h1{
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+/* 
+if p  is right inside div then this cSS wil be applied 
+div > p{
+    color: blue;
+    font-weight: bold;
+    background-color: green;
+} 
+
+if p is after Css is applied
+div+p{
+    color: white;
+    background-color: green;
+} */
+
+
+</style>
+
+</head>
+<body>
+
+    <h1> This is more about Selectors</h1>
+</body>
+
+<div class="container">
+    <div class="row">
+
+        <ul>
+            <li class="things"><p> This is another paragrah inside li</p></li>
+            <li class="things"><p> This is another paragrah inside li</p></li>
+            <li class="things"><p> This is another paragrah inside li</p></li>
+            <li class="things"><p> This is another paragrah inside li</p></li>
+            <li> This li is not effected </li>
+        </ul>
+
+        <p> This is a paragraph</p>
+
+    </div>
+    
+    <p> This is a paragraph</p>
+</div>
+<p> This is outer paragraph </p>
+</html>
