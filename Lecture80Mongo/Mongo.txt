@@ -1,0 +1,68 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Latif Computers> mongo
+MongoDB shell version v5.0.8
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("e6b948c5-7082-48df-ab87-e57af0f383f6") }
+MongoDB server version: 5.0.8
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+        https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+        https://community.mongodb.com
+---
+The server generated these startup warnings when booting:
+        2022-05-19T15:56:35.584+05:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+        2022-05-19T15:56:35.586+05:00: This server is bound to localhost. Remote systems will be unable to connect to this server. Start the server with --bind_ip <address> to specify which IP addresses it should serve responses from, or with --bind_ip_all to bind to all interfaces. If this behavior is desired, start the server with --bind_ip 127.0.0.1 to disable this warning
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> db
+test
+> use munawar
+switched to db munawar
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> show collections
+> db.text
+munawar.text
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> use  munawar
+switched to db munawar
+> db.text.insert({})
+WriteResult({ "nInserted" : 1 })
+> show dbs
+admin    0.000GB
+config   0.000GB
+local    0.000GB
+munawar  0.000GB
+> show collections
+text
+> db.text({"name":"Munawar"})
+uncaught exception: TypeError: db.text is not a function :
+@(shell):1:1

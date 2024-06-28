@@ -1,0 +1,54 @@
+
+> db.item.find()
+> use MDfruits
+switched to db MDfruits
+> db.items.find()
+{ "_id" : ObjectId("62868c76e2fd902433a8eaee"), "name" : "Apricot", "Price" : 500, "Rating" : 4.5, "quatity" : 29, "sold" : 20 }
+> db.items.insertMany([{name:"apple",price:300,rating:5.0,quantity:20,sold:10},{name:Almond,Price:1000,Rating:4.5,quantity:40,sold:30}])
+uncaught exception: ReferenceError: Almond is not defined :
+@(shell):1:79
+>  db.items.insertOne({name:"Almond",Price:1000,rating:4.0,quatity:20,sold:10})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62868f8eba797d993b3e279b")
+}
+> db.items.find()
+{ "_id" : ObjectId("62868c76e2fd902433a8eaee"), "name" : "Apricot", "Price" : 500, "Rating" : 4.5, "quatity" : 29, "sold" : 20 }
+{ "_id" : ObjectId("62868f8eba797d993b3e279b"), "name" : "Almond", "Price" : 1000, "rating" : 4, "quatity" : 20, "sold" : 10 }
+> db.items.insertOne({name:"Apricot",Price:500,Rating:4.5,quatity:29,bestquality:5,desition:true})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62869081ba797d993b3e279c")
+}
+> db.items.find()
+{ "_id" : ObjectId("62868c76e2fd902433a8eaee"), "name" : "Apricot", "Price" : 500, "Rating" : 4.5, "quatity" : 29, "sold" : 20 }
+{ "_id" : ObjectId("62868f8eba797d993b3e279b"), "name" : "Almond", "Price" : 1000, "rating" : 4, "quatity" : 20, "sold" : 10 }
+{ "_id" : ObjectId("62869081ba797d993b3e279c"), "name" : "Apricot", "Price" : 500, "Rating" : 4.5, "quatity" : 29, "bestquality" : 5, "desition" : true }
+
+//find items in  database
+> db.items.find()
+{ "_id" : ObjectId("62868f8eba797d993b3e279b"), "name" : "Almond", "Price" : 1000, "rating" : 4, "quatity" : 20, "sold" : 10 }
+{ "_id" : ObjectId("62869081ba797d993b3e279c"), "name" : "Apricot", "Price" : 500, "Rating" : 4.5, "quatity" : 29, "bestquality" : 5, "desition" : true }
+>
+//insert more items in database 
+
+> db.items.insertOne({name:"pear",Price:700,Rating:4.5,quatity:29,bestquality:5,desition:true})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6288c029f42f84700815bc67")
+}
+> db.items.insertOne({name:"Munawar Hssain",Location:"Maqpon xar",city:"skardu",Phone:0555791615})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6288c088f42f84700815bc68")
+}
+//after the insertion of more items in database 
+> db.items.find()
+{ "_id" : ObjectId("62868f8eba797d993b3e279b"), "name" : "Almond", "Price" : 1000, "rating" : 4, "quatity" : 20, "sold" : 10 }
+{ "_id" : ObjectId("62869081ba797d993b3e279c"), "name" : "Apricot", "Price" : 500, "Rating" : 4.5, "quatity" : 29, "bestquality" : 5, "desition" : true }
+{ "_id" : ObjectId("6288c029f42f84700815bc67"), "name" : "pear", "Price" : 700, "Rating" : 4.5, "quatity" : 29, "bestquality" : 5, "desition" : true }
+{ "_id" : ObjectId("6288c088f42f84700815bc68"), "name" : "Munawar Hssain", "Location" : "Maqpon xar", "city" : "skardu", "Phone" : 555791615 }
+> > db.items.insertOne({name:"pear",Price:700,Rating:4.5,quatity:29,bestquality:5,desition:true})
+uncaught exception: SyntaxError: expected expression, got '>' :
+@(shell):1:0
+>

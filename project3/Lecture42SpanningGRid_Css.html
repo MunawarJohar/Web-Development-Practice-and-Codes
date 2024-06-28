@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+Css Grid Soanning /multiple Row and Colunm
+    </title>
+    <style>
+        .class{
+            display: grid;
+            grid-template-columns: 1fr 3fr 3fr;
+            grid-template-rows: repeat(4,1fr);
+            /* We can set gap in column and rows */
+
+            /* grid-column-gap: 5rem;
+            grid-row-gap: 2rem; */
+            grid-row-gap: 1rem;
+            grid-column-gap: 2rem;
+        }
+        .box{
+            border: 2px solid  tomato;
+            background-color: green;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        .box:first-child{
+/* 
+            grid-column-start: 1; */
+            /* grid-column-end: 4; */
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4;
+/* this is short cut key for grid spanning 
+            grid-column: 1/span 3;
+            grid-row: 1/span 4; */
+        }
+    </style>
+</head>
+<body>
+
+<div class="class">
+    <div class="box">Boxes-1</div>
+    <div class="box">Boxes-2</div>
+    <div class="box">Boxes-3</div>
+    <div class="box">Boxes-4</div>
+    <div class="box">Boxes-5</div>
+    <div class="box">Boxes-6</div>
+    <div class="box">Boxes-7</div>
+    <div class="box">Boxes-8</div>
+    <div class="box">Boxes-9</div>
+    <div class="box">Boxes-10</div>
+    <div class="box">Boxes-11</div>
+    <div class="box">Boxes-12</div>
+    <div class="box">Boxes-13</div>
+    <div class="box">Box-14</div>
+    <div class="box">Box-15</div>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+  use filter we find the jujube
+{name:"jujube"}
+
+
+{name:"jujube"}
+OPTIONS
+FIND
+RESET
+
+
+
+ADD DATA
+
+VIEW
+Displaying documents 1 - 1 of 1
+
+REFRESH
+_id
+6288c029f42f84700815bc67
+name
+"jujube"
+Price
+100
+Rating
+4.5
+quatity
+29
+bestquality
+5
